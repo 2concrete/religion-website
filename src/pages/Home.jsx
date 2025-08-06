@@ -74,7 +74,10 @@ const Home = () => {
       >
         {
           <section className="flex flex-col items-center">
-            <img src="src/assets/map.png" className="w-200 m-20" />
+            <img
+              src="https://media.discordapp.net/attachments/1331835305233219646/1402608302063353877/data-maps.png?ex=68948846&is=689336c6&hm=13bb28497888670a9c89ae73aa001eb1bb779d89e2086c251ee64665fe817dbe&=&format=webp&quality=lossless&width=1782&height=1206"
+              className="w-200 m-20"
+            />
           </section>
         }
       </FadeContent>

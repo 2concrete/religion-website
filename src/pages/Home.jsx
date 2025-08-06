@@ -53,7 +53,7 @@ const Home = () => {
         initialOpacity={0}
       >
         {
-          <section className="flex gap-30 justify-center mb-40">
+          <section className="flex gap-30 justify-center mb-70">
             {" "}
             <Fact
               stat="50M"

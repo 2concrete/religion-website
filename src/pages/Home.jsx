@@ -74,7 +74,7 @@ const Home = () => {
       >
         {
           <section className="flex flex-col items-center">
-            <img src="src/assets/map.webp" className="w-200 m-20" />
+            <img src="/map.webp" className="w-200 m-20" />
           </section>
         }
       </FadeContent>

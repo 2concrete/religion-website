@@ -2,6 +2,7 @@ import FadeContent from "../components/FadeContent";
 import NavBar from "../components/NavBar";
 import PrincipleCard from "../components/PrincipleCard";
 import SplitText from "../components/SplitText";
+import useAtBottom from "../hooks/useAtBottom";
 
 import {
   HeartHandshake,
@@ -17,6 +18,7 @@ const Principles = () => {
   const handleAnimationComplete = () => {
     console.log("All letters have animated!");
   };
+  const atBottom = useAtBottom();
   return (
     <>
       <NavBar />
@@ -86,6 +88,11 @@ const Principles = () => {
                 title="Economic Justice"
                 text="Work should lift people out of poverty, not trap them in it. Systems must be fair, safe, and life-giving."
                 Icon={Banknote}
+              />
+              <PrincipleCard
+                title="Participation"
+                text="Everyone has the right to be heard and involved in decisions that affect their lives. True justice includes giving people a voice."
+                Icon={Users}
               />
             </div>
           }

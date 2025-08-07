@@ -2,11 +2,14 @@ import FadeContent from "../components/FadeContent";
 import NavBar from "../components/NavBar";
 import SplitText from "../components/SplitText";
 import WorkCard from "../components/WorkCard";
+import useAtBottom from "../hooks/useAtBottom";
+import ScrollIndicator from "../components/ScrollIndicator";
 
 const About = () => {
   const handleAnimationComplete = () => {
     console.log("All letters have animated!");
   };
+  const atBottom = useAtBottom();
   return (
     <>
       <NavBar />
@@ -119,6 +122,7 @@ const About = () => {
           />
         </div>
       </section>
+      <div>{!atBottom && <ScrollIndicator />}</div>
     </>
   );
 };

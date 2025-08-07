@@ -2,11 +2,14 @@ import Fact from "../components/Fact";
 import NavBar from "../components/NavBar";
 import SplitText from "../components/SplitText";
 import FadeContent from "../components/FadeContent";
+import useAtBottom from "../hooks/useAtBottom";
+import ScrollIndicator from "../components/ScrollIndicator";
 
 const Home = () => {
   const handleAnimationComplete = () => {
     console.log("All letters have animated!");
   };
+  const atBottom = useAtBottom();
   return (
     <>
       <NavBar />
@@ -87,7 +90,7 @@ const Home = () => {
       >
         {
           <section className="flex flex-col items-center">
-            <p className="text-center mb-40 w-150">
+            <p className="text-center mb-15 w-150">
               Modern slavery exists in every country, including places like
               Australia. It can be hidden in everyday jobs like farming,
               construction, cleaning, or even domestic work.
@@ -95,6 +98,7 @@ const Home = () => {
           </section>
         }
       </FadeContent>
+      <div>{!atBottom && <ScrollIndicator />}</div>
     </>
   );
 };
